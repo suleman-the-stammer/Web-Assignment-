@@ -1,0 +1,119 @@
+.conatiner {
+
+    .calculator {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+
+            .heading {
+                h3 {
+                    color: white;
+
+                }
+            }
+
+            .btn {
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+
+                span {
+                    color: white;
+                    text-transform: uppercase;
+                    font-size: 10px;
+                    font-weight: 500;
+                }
+
+                .toggle_btn {
+                    position: relative;
+                    width: 55px;
+                    height: 21px;
+                    border-radius: 9px;
+                    background-color: #232d41;
+                    padding: 5px;
+
+                    .toggle {
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background-color: red;
+                    }
+
+                    .switch_no {
+                        position: absolute;
+                        top: -17px;
+                        display: flex;
+                        gap: 10px;
+                    }
+                }
+            }
+        }
+        .display{
+            background-color:#141e32;
+            width: 100%;
+            height: 100px;
+            border-radius: 8px;
+        }
+        .keypad{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 12px;
+            background-color: #232d41;
+            padding: 15px;
+            border-radius: 8px;
+            button{
+                background-color: #e0d6d2;
+                color: #40475d;
+                border: none;
+                border-radius: 9px;
+                padding: 10px;
+                font-size: 1.5rem;
+                font-weight: 800;
+                cursor: pointer;
+                box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+                transition: background-color 0.3s;
+                &:hover {
+                    background-color: #d6c9c0;
+                  }
+            }
+
+            .reset,.equal{
+                grid-column: span 2;
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+            .reset{
+                background-color: #606f98;
+                color: white;
+                &:hover {
+                    background-color: #5a6480;
+                  }
+            }
+            .equal{
+                background-color: #e63946;
+                color: white;
+               
+                &:hover {
+                    background-color: #d52836;
+                  }
+            }
+            .del{
+                background-color: #606f98;
+                color: white;
+                font-size: 1.2rem;
+                font-weight: 600;
+
+            }
+        }
+
+    }
+
+
+
+}

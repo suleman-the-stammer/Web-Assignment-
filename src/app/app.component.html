@@ -1,0 +1,41 @@
+<div class="conatiner">
+    <div class="calculator">
+        <div class="header">
+            <div class="heading">
+                <h3>calc</h3>
+            </div>
+            <div class="btn">
+                <div><span>theme</span></div>
+                <div class="toggle_btn">
+                    <div class="switch_no"><span>1</span><span>2</span><span>3</span></div>
+                    <div class="toggle"></div>
+                </div>
+            </div>
+        </div>
+        <div class="display">{{ displayValue || '0' }}</div>
+        <div class="keypad">
+            <button (click)="onPress('7')">7</button>
+            <button (click)="onPress('8')">8</button>
+            <button (click)="onPress('9')">9</button>
+            <button (click)="onPress('DEL')" class="del">DEL</button>
+            <button (click)="onPress('4')">4</button>
+            <button (click)="onPress('5')">5</button>
+            <button (click)="onPress('6')">6</button>
+            <button (click)="onPress('+')">+</button>
+            <button (click)="onPress('1')">1</button>
+            <button (click)="onPress('2')">2</button>
+            <button (click)="onPress('3')">3</button>
+            <button (click)="onPress('-')">-</button>
+            <button (click)="onPress('.')">.</button>
+            <button (click)="onPress('0')">0</button>
+            <button (click)="onPress('/')">/</button>
+            <button (click)="onPress('x')">x</button>
+            <button (click)="onPress('RESET')" class="reset">RESET</button>
+            <button (click)="onPress('=')" class="equal" >=</button>
+
+        </div>
+    </div>
+
+
+
+</div>
